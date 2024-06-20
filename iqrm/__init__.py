@@ -4,3 +4,6 @@ del get_versions
 
 from .core import iqrm_mask
 from .tests import test
+
+from . import _version
+__version__ = _version.get_versions()['version']
